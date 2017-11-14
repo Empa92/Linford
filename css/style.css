@@ -1,0 +1,15 @@
+/* footer style */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    color: white;
+    text-align: center;
+}
+
+/* footer text style */
+.footer p {
+	color: #7c7c7d;
+}
