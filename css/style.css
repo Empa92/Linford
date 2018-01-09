@@ -15,7 +15,18 @@
 }
 
 .navbar {
+	background-color: white;
 	height: 50px;
+}
+
+#slideshow {
+	width: 80%;
+	margin: auto;
+}
+
+.carousel.slide {
+	width: 100%;
+	margin: auto;
 }
 
 li.dropdown:hover > .dropdown-menu {
