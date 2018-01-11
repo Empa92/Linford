@@ -1,32 +1,13 @@
-/* footer style */
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #f8f9fa;
-    color: white;
-    text-align: center;
-}
+/*GLOBAL*/
 
-/* footer text style */
-.footer p {
-	color: #7c7c7d;
+head, body {
+	margin: 0;
+	padding: 0;
 }
 
 .navbar {
 	background-color: white;
 	height: 50px;
-}
-
-#slideshow {
-	width: 80%;
-	margin: auto;
-}
-
-.carousel.slide {
-	width: 100%;
-	margin: auto;
 }
 
 li.dropdown:hover > .dropdown-menu {
@@ -54,3 +35,177 @@ li.dropdown:hover > .dropdown-menu {
 	margin-top: -5px;
 	margin-bottom: -5px;
 }
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    color: white;
+    text-align: center;
+}
+
+/* footer text style */
+.footer p {
+	color: #7c7c7d;
+}
+
+.bread {
+    font-size: 12;
+    font-family: calibri;
+    color: grey;
+ 
+}
+ 
+.headtext {
+    font-size: 24;
+    font-family: calibri;
+    color: grey;
+    text-align: center;
+}
+
+/* END OF GLOBAL */
+
+/* STARTPAGE */
+
+#slideshow {
+	width: 80%;
+	margin: auto;
+	padding-bottom: 50px;
+}
+
+.carousel.slide {
+	width: 100%;
+	margin: auto;
+}
+
+.startgridcontainer {
+	width: 80%;
+	margin: auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50% 50%;
+    padding: 20px;
+}
+
+.startgridcontainer img {
+	width: 100%;
+	height: auto;
+	padding: 20px;
+}
+
+/*END OF STARTPAGE*/
+
+/* OM OSS */
+ 
+.content {
+    width: 80%;
+    margin: auto;
+}
+ 
+.info {
+    width: 80%;
+    margin: auto;
+    margin-top: 2.5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50% 50%;
+}
+ 
+.kontakt-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50% 50%;
+    width: 450px;
+    height: 350px;
+}
+ 
+.om-oss-parallax {
+    /* The image used */
+    background-image: url("../assets/1.jpg");
+ 
+    /* Set a specific height */
+    height: 500px;
+ 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+}
+ 
+/* END OF OM OSS */
+
+/* SUPPORT */
+
+/* Parallaxer på support */
+.parallax1 {
+    /* The image used */
+    background-image: url("../assets/1.jpg");
+ 
+    /* Set a specific height */
+    height: 500px;
+ 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+}
+ 
+.parallax2 {
+    /* The image used */
+    background-image: url("../assets/2.jpg");
+ 
+    /* Set a specific height */
+    height: 500px;
+ 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+}
+ 
+.parallax3 {
+    /* The image used */
+    background-image: url("../assets/3.jpg");
+ 
+    /* Set a specific height */
+    height: 500px;
+ 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+}
+ 
+.parallax4 {
+    /* The image used */
+    background-image: url("../assets/4.jpg");
+ 
+    /* Set a specific height */
+    height: 500px;
+ 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+}
+
+/* Innehåll mellan parallaxerna på support GLOBAL */
+.content1, .content2, .content3, .content4, .content5 {
+    width: 100%;
+    padding: 150px;
+   
+}
+
+/* END OF SUPPORT */
+
