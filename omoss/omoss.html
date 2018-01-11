@@ -8,29 +8,57 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar fixed-top navbar-expand lg navbar-light">
         <a class="navbar-brand" href="../startpage/startpage.html">
             <img src="../assets/logo.png" width="70" height="70" alt="">
         </a>
-        <div class="navbar-nav">
-            <a class="nav-item nav-link" href="../it/it.html">Våra tjänster</a>
-            <a class="nav-item nav-link" href="../dokumenthantering/dokumenthantering.html">Dokumenthantering</a>
-            <a class="nav-item nav-link active" href="../omoss/omoss.html">Lär känna oss</a>
-            <a class="nav-item nav-link" href="../support/support.html">Support</a>
-            <a target="_blank" class="nav-item nav-link" href="http://lmgtfy.com/?q=How+to+be+on+time">Webbshop</a>
+        <div>
+            <ul class="nav navbar-nav">
+                <li class="dropdown" data-hover="dropdown">
+                    <a class="nav-item nav-link nav-top" id="link1" href="../it/it.html">Workplace</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="nav-item nav-link" href="../it/it.html">Lorem</a></li>
+                            <li><a class="nav-item nav-link" href="#">Ipsum</a></li>
+                            <li><a class="nav-item nav-link" href="#">Hej</a></li>
+                        </ul>
+                </li>
+                <li class="dropdown" data-hover="dropdown" >
+                    <a class="nav-item nav-link" id="link2" href="../dokumenthantering/dokumenthantering.html"">Workflow</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="nav-item nav-link" href="#">Lorem</a></li>
+                            <li><a class="nav-item nav-link" href="#">Ipsum</a></li>
+                            <li><a class="nav-item nav-link" href="#">Hej</a></li>
+                        </ul>
+                </li>
+                <li><a class="nav-item nav-link" href="../omoss/omoss.html">Kontakt</a></li>
+                <li><a class="nav-item nav-link" href="../support/support.html">Support</a></li>
+                <li><a target="_blank" class="nav-item nav-link" href="http://www.google.com">Webbshop</a></li>
+            </ul>
         </div>
     </nav>
+    
+     <div class="container">
 
-    <div class="container">
+            <div class="row">
 
-        <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
 
-            <div class="col-lg-8 col-lg-offset-2">
+                    <h1>Kontakta Oss</h1>
 
-                <h1>Kontakt</h1>
+                    <p class="lead">Kontakta oss om du undrar över något!</p>
 
-                <p class="lead">Välkommen att kontakta oss.</p>
+                    <!-- We're going to place the form here in the next step -->
+                    <form></form> 
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="om-oss-parallax">
+            <div class="content">
                 <form id="contact-form" method="post" action="contact.php" role="form">
+
                     <div class="messages"></div>
 
                     <div class="controls">
@@ -39,7 +67,7 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="form_name">Förnamn *</label>
-                                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Ange förnamn *" required="required" data-error="Förnamn ärobligatoriskt.">
+                                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Ange förnamn *" required="required" data-error="Förnamn är obligatoriskt.">
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>
@@ -55,14 +83,14 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="form_email">Email *</label>
-                                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Ange email *" required="required" data-error="Ange giltig email.">
+                                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Ange email *" required="required" data-error="Ange en giltig email.">
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="form_phone">Telefonnummer</label>
-                                    <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Ange telefonummer">
+                                    <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Ange telefonnummer">
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>
@@ -71,56 +99,66 @@
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label for="form_message">Meddelande *</label>
-                                    <textarea id="form_message" name="message" class="form-control" placeholder="Lämna meddelande *" rows="4" required="required" data-error="Lämna meddelande."></textarea>
+                                    <textarea id="form_message" name="message" class="form-control" placeholder="Ange meddelande *" rows="4" required="required" data-error="Skriv ett meddelande"></textarea>
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>
                             <div class="col-md-12">
-                                <input type="submit" class="btn btn-success btn-send" value="Send message">
+                                <input type="submit" class="btn btn-success btn-send" value="Skicka meddelande">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                </br>
+                                <p class="text-muted"><strong>*</strong> Fätlten är obligatoriska.</p>
                             </div>
                         </div>
                     </div>
+
                 </form>
-            </div>
+            </div>    
         </div>
-        <div>
-            <div class="row text-center">
-                <div class="col-sm-3 col-xs-6 first-box">
-                    <h3>Phone</h3>
-                    <p>+880-1700-987654</p>
-                    <br>
-                </div>
-
-                <div class="col-sm-3 col-xs-6 second-box">
-                    <h3>Phone</h3>
-                    <p>+880-1700-987654</p>
-                    <br>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-sm-3 col-xs-6 third-box">
-                    <h3>Phone</h3>
-                    <p>+880-1700-987654</p>
-                    <br>
-                </div>
-                <div class="col-sm-3 col-xs-6 forth-box">
-                    <h3>Phone</h3>
-                    <p>+880-1700-987654</p>
-                    <br>
-                </div>
-            </div>
-        </div>
-
-        <div class="karta">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8157.575329684225!2d15.174993412133787!3d59.259569043971126!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfbdca5cb0501acb0!2sLinford+Communication+AB!5e0!3m2!1sen!2sse!4v1515505833465" width="450" height="350" frameborder="0" style="border:0" allowfullscreen>
+        <div class="info">
+            <div class="karta">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8157.575329684225!2d15.174993412133787!3d59.259569043971126!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfbdca5cb0501acb0!2sLinford+Communication+AB!5e0!3m2!1sen!2sse!4v1515505833465" width="450" height="350" frameborder="0" style="border:0" allowfullscreen>
             </iframe>
+            </div>
+            <div class="kontakt-info">
+                <div class="kontakt-grid text-center">
+                    <div class="kontakt-grid1">
+
+                        <h3>Adress</h3>
+                        <p>Linford Communication AB
+                            Linford Vending AB
+                            Radiatorvägen 15
+                            SE - 702 27 Örebro
+                            Sweden</p>                           
+                    </div>
+                    <div class="kontakt-grid2">
+                        
+                            <h3>Öppettider</h3>
+                            <p>mon-fri: 08.00–17.00</br>
+                                lunch: 12.00-13.00</br>
+                                sat: closed</br>
+                                sun: closed</p>
+                            <br>
+                        
+                    </div>
+                    <div class="kontakt-grid3">
+                        
+                            <h3>Phone</h3>
+                            <p>+880-1700-987654</p>
+                            <br>
+                        
+                    </div>
+                    <div class="kontakt-grid4">
+                        
+                            <h3>Phone</h3>
+                            <p>+880-1700-987654</p>
+                            <br>
+                    </div>
+                </div>                
+            </div>
         </div>
-    </div>
 
     <div class="footer">
         <p>Linford Communications AB 2017</p>
