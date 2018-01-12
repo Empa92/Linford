@@ -15,8 +15,9 @@ head, body {
 }
 
 .navbar {
-	background-color: white;
-	height: 50px;
+	background-color: #FFFFFF;
+    height: 50px;
+    padding: 30px;
 }
 
 li.dropdown:hover > .dropdown-menu {
@@ -26,23 +27,22 @@ li.dropdown:hover > .dropdown-menu {
 	margin-top: 10px;
 }
 
-#link1 {     
+
+#link1,#link2, #link4 {     
 	display: inline-block;     
 	position: relative;    
 	padding-bottom: 1em;     
-	margin-bottom: -2em; 
+    margin-bottom: -2em; 
+
 }
 
-#link2 {     
-	display: inline-block;     
-	position: relative;    
-	padding-bottom: 1em;     
-	margin-bottom: -2em; 
+#link1, #link2, #link3, #link4, #link5{
+    padding-right: 30px;
 }
 
 .nav-item {
 	margin-top: -5px;
-	margin-bottom: -5px;
+    margin-bottom: -5px;
 }
 
 .footergridcontainer {
@@ -219,16 +219,30 @@ h3 {
 .content {
     width: 80%;
     margin: auto;
+    display: flex;
 }
  
 #contact-form{
-    padding-top: 15px;
+    padding-top: 50px;
 }
  
 .kontakt-info{
    
 }
  
+.form{
+    width: 50%;
+}
+ 
+.karta-iframe{
+    height: 100%;
+    padding: 50px 0px 40px 50px;
+ 
+}
+ 
+.karta{
+    width: 50%;
+}
 .info {
     width: 80%;
     margin: auto;
@@ -253,7 +267,7 @@ h3 {
 }
  
 .om-oss-jumbotron{
-    background-image: url("../assets/7.jpg");
+    background-image: url("../assets/3.jpg");
 }
 .btn:hover{
     background-color: grey;
@@ -297,7 +311,7 @@ h3 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.5;
+  
 }
  
 .parallax2 {
@@ -312,7 +326,6 @@ h3 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.5;
 }
  
 .parallax3 {
@@ -327,7 +340,7 @@ h3 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.5;
+
 }
  
 .parallax4 {
@@ -342,7 +355,6 @@ h3 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.5;
 }
 
 /* Innehåll mellan parallaxerna på support GLOBAL */
