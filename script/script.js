@@ -12,3 +12,10 @@ $(document).ready(function(){
         return false;
     });
 });
+
+//Funktion för visa mer-knapp
+$(document).ready(function(){
+    $(".flip").click(function(){
+        $(".panel").slideToggle("slow");
+    });
+});
